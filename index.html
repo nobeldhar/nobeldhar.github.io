@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nobel Dhar</title>
+<meta name="description" content="Nobel Dhar — PhD candidate at Kennesaw State University researching efficient LLM inference: activation sparsity, memory-constrained systems, and edge AI.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E6BA8'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='white' text-anchor='middle'%3END%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --paper: #FCFCFB;
+    --ink: #1B1F24;
+    --muted: #5C6670;
+    --line: #E6E8E6;
+    --accent: #0E6BA8;
+    --accent-soft: #EAF2F8;
+    --tag: #F0F1EF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #12151A;
+      --ink: #E6E8E5;
+      --muted: #97A1AB;
+      --line: #272C33;
+      --accent: #5BA3D9;
+      --accent-soft: #1A2A38;
+      --tag: #1E232B;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.02rem;
+    line-height: 1.62;
+  }
+  main { max-width: 660px; margin: 0 auto; padding: 52px 22px 64px; }
+  h1, h2 {
+    font-family: Charter, "Bitstream Charter", Cambria, Georgia, serif;
+    line-height: 1.25;
+    text-wrap: balance;
+  }
+  h1 { font-size: 2.1rem; font-weight: 700; margin: 0 0 2px; letter-spacing: -0.01em; }
+  h2 { font-size: 1.28rem; font-weight: 700; margin: 42px 0 14px; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .role { color: var(--muted); margin: 0 0 14px; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 0; margin: 0 0 6px; list-style: none; font-size: 0.95rem; }
+  p { margin: 0 0 14px; }
+  .pub { margin: 0 0 18px; padding-left: 0; }
+  .pub .t { font-weight: 600; }
+  .pub .m { color: var(--muted); font-size: 0.93rem; }
+  .tag {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    background: var(--tag);
+    border-radius: 5px;
+    padding: 1.5px 7px;
+    white-space: nowrap;
+  }
+  .tag.hot { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  .pub .x { font-size: 0.93rem; }
+  .pub .x a + a::before { content: "· "; color: var(--muted); }
+  ul.plain { list-style: none; padding: 0; margin: 0; }
+  ul.plain li { margin-bottom: 12px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0 0; }
+  footer { color: var(--muted); font-size: 0.9rem; padding-top: 16px; }
+  @media (prefers-reduced-motion: no-preference) {
+    main { animation: rise 0.35s ease-out; }
+    @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Nobel Dhar</h1>
+    <p class="role">PhD candidate, Computer Science · Kennesaw State University</p>
+    <ul class="links">
+      <li><a href="https://scholar.google.com/citations?user=OA35VhMAAAAJ">Google Scholar</a></li>
+      <li><a href="https://github.com/nobeldhar">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/nobel-dhar-0b5297169">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0009-0000-5467-7082">ORCID</a></li>
+      <li><a href="mailto:nobeldhar807@gmail.com">Email</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      I research <strong>efficient inference for large language models</strong> —
+      making models run where they don't naturally fit. My dissertation
+      (<em>advisor: Dr.&nbsp;Kun&nbsp;Suo</em>, defense expected 2027) studies the
+      regime where model weights exceed device memory, spanning activation
+      sparsity, activation-pattern prediction, and storage-aware system design
+      for memory-constrained platforms such as NVIDIA Jetson.
+    </p>
+    <p>
+      My work is supported by U.S. National Science Foundation grants, and my
+      first-author study of LLM deployment on edge devices has been cited by
+      researchers at Meta, Google, NVIDIA, Stanford, MIT, and UC&nbsp;San&nbsp;Diego.
+      I release <a href="https://github.com/nobeldhar">verified, reproducible artifacts</a>
+      for my papers. Before the PhD, I built system-level Android software
+      (AOSP/HAL) for the PockeTalk translation device at BJIT.
+    </p>
+  </section>
+
+  <section>
+    <h2>Selected publications</h2>
+
+    <div class="pub">
+      <div class="t">A Sparsity Predicting Approach for Large Language Models via Activation Pattern Clustering</div>
+      <div class="m">N. Dhar, B. Deng, M.R. Islam, X. Zhang, K.F.A. Nasif, K. Suo</div>
+      <div class="m"><span class="tag">Euro-Par 2025</span> Springer LNCS 15900</div>
+      <div class="x"><a href="https://arxiv.org/abs/2507.14179">paper</a><a href="https://github.com/nobeldhar/Activation-Aware-Clustering">code &amp; artifacts</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="t">Activation Sparsity Opportunities for Compressing General Large Language Models</div>
+      <div class="m">N. Dhar, B. Deng, M.R. Islam, K.F.A. Nasif, L. Zhao, K. Suo</div>
+      <div class="m"><span class="tag">IEEE IPCCC 2024</span></div>
+      <div class="x"><a href="https://doi.org/10.1109/IPCCC59868.2024.10850382">paper</a><a href="https://github.com/nobeldhar/llm-activation-sparsity">code &amp; artifacts</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="t">An Empirical Analysis and Resource Footprint Study of Deploying Large Language Models on Edge Devices</div>
+      <div class="m">N. Dhar, B. Deng, D. Lo, X. Wu, L. Zhao, K. Suo</div>
+      <div class="m"><span class="tag">ACMSE 2024</span> <span class="tag hot">71+ citations</span></div>
+      <div class="x"><a href="https://doi.org/10.1145/3603287.3651205">paper</a><a href="https://github.com/nobeldhar/llm-edge-footprint">data &amp; artifacts</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="t">Characterizing and Understanding the Performance of Small Language Models on Edge Devices</div>
+      <div class="m">M.R. Islam, N. Dhar, B. Deng, T.N. Nguyen, S. He, K. Suo</div>
+      <div class="m"><span class="tag">IEEE IPCCC 2024</span> <span class="tag hot">26 citations</span></div>
+    </div>
+
+    <div class="pub">
+      <div class="t">Characterizing and Understanding the Energy Footprint and Efficiency of Small Language Models on Edges</div>
+      <div class="m">M.R. Islam, B. Deng, N. Dhar, T.N. Nguyen, S. He, Y. Shi, K. Suo</div>
+      <div class="m"><span class="tag">IEEE MASS 2025</span></div>
+      <div class="x"><a href="https://arxiv.org/abs/2511.11624">paper</a></div>
+    </div>
+
+    <div class="pub">
+      <div class="t">Pointer over Attention: An Improved Bangla Text Summarization Approach Using Hybrid Pointer Generator Network</div>
+      <div class="m">N. Dhar, G. Saha, P. Bhattacharjee, A. Mallick, M.S. Islam</div>
+      <div class="m"><span class="tag">ICCIT 2021</span></div>
+    </div>
+
+    <p class="m" style="color: var(--muted);">
+      11 publications, 134+ citations, h-index 5 —
+      <a href="https://scholar.google.com/citations?user=OA35VhMAAAAJ">full list on Google Scholar</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>Patent &amp; service</h2>
+    <ul class="plain">
+      <li>Co-inventor, <em>Systems and Methods for Using Edge Devices in Multi-Modal Vision Models</em> — U.S. provisional application (2025), assigned to InComm Payments.</li>
+      <li>Invited peer reviewer, IEEE ICTAI 2025 · Sigma Xi (nominated 2026).</li>
+    </ul>
+  </section>
+
+  <hr>
+  <footer>
+    nobeldhar807@gmail.com · Marietta, GA ·
+    <a href="https://github.com/nobeldhar/nobeldhar.github.io">page source</a>
+  </footer>
+</main>
+</body>
+</html>
