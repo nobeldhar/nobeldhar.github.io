@@ -191,14 +191,18 @@
         first-author study of LLM deployment on edge devices has been cited by
         researchers at Meta, Google, NVIDIA, Stanford, MIT, and UC&nbsp;San&nbsp;Diego.
         Every paper ships <a href="https://github.com/nobeldhar">verified, reproducible artifacts</a>.
-        Before the PhD, I built system-level Android software (AOSP/HAL) for the
-        PockeTalk translation device at BJIT.
+        Before the PhD I spent two and a half years in industry, shipping system-level
+        Android software (AOSP down to the HAL) for <a href="https://www.pocketalk.com/">PockeTalk</a>, a commercial embedded
+        translation device. Its translation app reached five cloud inference providers,
+        because the device could not run the models itself &mdash; which is the problem
+        I work on now.
       </p>
     </section>
 
     <section>
       <div class="eyebrow">News</div>
       <ul class="news">
+        <li><span class="d">2026-08</span><span><strong>NeuroPrefetcher</strong> preprint is live on arXiv &mdash; <a href="https://arxiv.org/abs/2608.22643">arXiv:2608.22643</a> (cs.DC, cs.LG).</span></li>
         <li><span class="d">2026-08</span><span>Released verified artifact repositories for my ACMSE, IPCCC, and Euro-Par papers — data, code, and calibrated thresholds, all independently re-verified. <a href="https://github.com/nobeldhar">github.com/nobeldhar</a></span></li>
         <li><span class="d">2026-08</span><span><strong>NeuroPrefetcher</strong> is public: the Jetson engine, the A100 training pipeline, the data behind every figure, and the predictor/centroid checkpoints (Release v1.0) — <a href="https://github.com/nobeldhar/NeuroPrefetcher">github.com/nobeldhar/NeuroPrefetcher</a>.</span></li>
         <li><span class="d">2026-07</span><span><strong>NeuroPrefetcher</strong>, the storage-aware sparse-inference system at the core of my dissertation, accepted at <strong>ICPP 2026</strong> (23% acceptance rate) — see you in Singapore!</span></li>
@@ -215,8 +219,8 @@
       <div class="pub">
         <div class="t">NeuroPrefetcher: Storage-Aware Sparse LLM Inference via Delta Prefetching</div>
         <div class="a"><b>N. Dhar</b> et al.</div>
-        <div class="tl">When model weights exceed device memory, demand paging collapses; NeuroPrefetcher replaces it with application-scheduled, prediction-driven NVMe-to-GPU weight movement — 7.9&ndash;12.0&times; faster than llama.cpp, and one of only 4 of 20 production systems that generate at all in this regime.</div>
-        <div class="meta"><span class="tag">ICPP 2026</span><span class="tag hot">to appear · 23% acceptance</span><a href="https://github.com/nobeldhar/NeuroPrefetcher">code</a></div>
+        <div class="tl">When model weights exceed device memory, demand paging collapses; NeuroPrefetcher replaces it with application-scheduled, prediction-driven NVMe-to-GPU weight movement — 7.9&ndash;12.0&times; faster than llama.cpp, and one of only 4 of 20 production systems that generate at all in this regime. Every number measured on a real Jetson AGX Orin with a physical NVMe SSD &mdash; nothing simulated.</div>
+        <div class="meta"><span class="tag">ICPP 2026</span><span class="tag hot">to appear · 23% acceptance</span><a href="https://arxiv.org/abs/2608.22643">paper</a><a href="https://github.com/nobeldhar/NeuroPrefetcher">code</a></div>
       </div>
 
       <div class="pub">
